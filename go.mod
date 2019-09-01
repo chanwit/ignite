@@ -58,7 +58,7 @@ require (
 	google.golang.org/grpc v1.21.1 // indirect
 	gopkg.in/alessio/shellescape.v1 v1.0.0-20170105083845-52074bc9df61
 	gotest.tools v2.2.0+incompatible // indirect
-	k8s.io/apimachinery v0.0.0-20190612205821-1799e75a0719
+	k8s.io/apimachinery v0.0.0-20190817020851-f2f3a405f61d
 	k8s.io/kube-openapi v0.0.0-20190816220812-743ec37842bf
 	sigs.k8s.io/yaml v1.1.0
 )
@@ -68,4 +68,7 @@ replace (
 	github.com/docker/distribution => github.com/docker/distribution v0.0.0-20190711223531-1fb7fffdb266
 	github.com/godbus/dbus => github.com/godbus/dbus v0.0.0-20181101234600-2ff6f7ffd60f
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v0.1.2-0.20190812154431-4f2ab155bbdd
+	k8s.io/api => k8s.io/api v0.0.0-20190817021128-e14a4b1f5f84
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190817020851-f2f3a405f61d
+	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20190510232812-a01b7d5d6c22
 )

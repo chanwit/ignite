@@ -82,6 +82,9 @@ func StartVM(vm *api.VM, debug bool) error {
 	// Add the volumes to the container devices
 	for _, volume := range vm.Spec.Storage.Volumes {
 		if volume.BlockDevice == nil {
+			if !logs.Quiet {
+				log.Infof("Skipping a non-block device for now: volume %q ...", volume.Name)
+			}
 			continue // Skip all non block device volumes for now
 		}
 

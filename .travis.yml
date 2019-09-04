@@ -5,8 +5,10 @@ go:
   - 1.12.9
 env:
   - GO111MODULE=on
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y dmsetup
 install:
-  - apt-get install dmsetup
   - make bin/amd64/ignite
 script:
-  - echo script path
+  - echo test will be here

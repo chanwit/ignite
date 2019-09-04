@@ -4,6 +4,6 @@ dist: xenial
 go:
   - 1.12.9
 script:
-  - echo script
+  - echo script path
 install:
   - make bin/amd64/ignite

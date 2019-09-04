@@ -1,6 +1,9 @@
 language: go
 go_import_path: github.com/weaveworks/ignite
 dist: xenial
+sudo: required
+services:
+  - docker
 go:
   - 1.12.9
 env:

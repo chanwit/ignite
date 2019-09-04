@@ -3,6 +3,8 @@ go_import_path: github.com/weaveworks/ignite
 dist: xenial
 go:
   - 1.12.9
+env:
+  - GO111MODULE=on
 script:
   - echo script path
 install:

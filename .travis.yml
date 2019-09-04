@@ -8,6 +8,8 @@ env:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y dmsetup
+  - sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils cpu-checker
+  - kvm-ok
 install:
   - make bin/amd64/ignite
 script:

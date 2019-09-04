@@ -1,0 +1,9 @@
+language: go
+go_import_path: github.com/weaveworks/ignite
+dist: xenial
+go:
+  - 1.12.9
+script:
+  - echo script
+install:
+  - make bin/amd64/ignite

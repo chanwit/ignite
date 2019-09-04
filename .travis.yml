@@ -5,7 +5,8 @@ go:
   - 1.12.9
 env:
   - GO111MODULE=on
+install:
+  - apt-get install dmsetup
+  - make bin/amd64/ignite
 script:
   - echo script path
-install:
-  - make bin/amd64/ignite
